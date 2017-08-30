@@ -1,0 +1,215 @@
+*html reset*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed,
+	figure, figcaption, footer, header, hgroup,
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 1;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure,
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+body {
+	background: rgb(250,250,250);
+	line-height: 1;
+	font-family: 'Karla', sans-serif;
+	font-size: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Cotent */
+h1{
+	font-size: 46px;
+	padding-bottom: 20px;
+	-webkit-animation-duration: 2.25s;
+	-webkit-animation-name: fade-in;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-duration: 2.25s;
+	-moz-animation-name: fade-in;
+	-moz-animation-timing-function: ease-in-out;
+	-o-animation-duration: 2.25s;
+	-o-animation-name: fade-in;
+	-o-animation-timing-function: ease-in-out;
+	animation-name: fade-in;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+}
+h2{
+	font-size: 32px;
+	padding-bottom: 16px;
+}
+h4{
+	font-size: 24px;
+}
+
+.navbar-fixed-top{
+	background-color: rgba(250,250,250,0);
+	border: none;
+}
+
+.navbar-right{
+	margin-right: 5%;
+	padding-top: 0.5%;
+	color: black;
+}
+nav li {
+	display: inline-block;
+	list-style: none;
+	font-size: 18px;
+	border: 1px gray solid;
+	margin-left: -1px;
+	background-color: rgba(245,245,245,0.6);
+	color: black;
+}
+
+nav li a {
+	width: 100%;
+	height: 100%;
+}
+nav li:hover {
+	background-color: rgba(245,245,245,0.4);
+
+}
+nav .active li{
+	background-color: rgba(245,245,245,0.4);
+}
+#opener_section {
+	background: rgba(250,250,250,0.93);
+	height: 100vh;
+	width: 100%;
+}
+
+.intro-container {
+	width: 75%;
+	height: auto;
+	transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	position: relative;
+	top: 50%;
+	left: 12%;
+	max-width: 600px
+}
+.intro-subhead-left{
+	margin-right: 40px;
+	display: inline-block;
+}
+.intro-subhead-center{
+	margin-right: 40px;
+	display: inline-block;
+}
+.intro-subhead-right{
+	margin-right: 40px;
+	display: inline-block;
+}
+
+
+/* main */
+main h2 {
+	font-size: 48px;
+	color: white;
+	font-weight:bold;
+	line-height: 1.5em;
+}
+.one-project{
+    background: pink;
+    height: 95vh;
+    width: 100%;
+		color: white;
+		font-size: 30px;
+		display:flex;
+		flex-wrap:wrap;
+}
+
+.project-count-odd{
+	display: inline-block;
+	font-size: 100px;
+	text-align: center;
+	padding-top: 100px;
+	background-color: rgba(250,250,250,0.6);
+	height: 100%;
+}
+
+.project-count-even{
+	display: inline-block;
+	font-size: 100px;
+	text-align: center;
+	padding-top: 100px;
+	background-color: rgba(250,250,250,0.6);
+	height: 100%;
+}
+
+
+.project-descrip{
+	display: inline-block;
+	font-size: 20px;
+	padding-top: 5%;
+	padding-left: 5%;
+}
+#showLight{
+	opacity: 0;
+}
+#showTwitter{
+	opacity: 0;
+}
+#showComp{
+		opacity: 0;
+}
+#datacomp{
+	background: url("../img/titanic.jpg") center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#lightrail{
+	background: url("../img/lightrail2.jpeg") center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#scraper{
+	background: url("../img/twitter2.jpg");
+	background-position: 0% 70%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+footer{
+	text-align: center;
+}
