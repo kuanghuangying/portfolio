@@ -79,14 +79,16 @@ h2{
 h4{
 	font-size: 24px;
 }
-
+.title{
+	opacity:0;
+}
 .navbar-fixed-top{
 	background-color: rgba(250,250,250,0);
 	border: none;
 }
 
 .navbar-right{
-	margin-right: 5%;
+	margin-right: 0.5%;
 	padding-top: 0.5%;
 	color: black;
 }
@@ -127,6 +129,9 @@ nav .active li{
 	position: relative;
 	top: 50%;
 	left: 12%;
+	max-width: 850px
+}
+.h1-container{
 	max-width: 600px
 }
 .intro-subhead-left{
@@ -149,6 +154,9 @@ main h2 {
 	color: white;
 	font-weight:bold;
 	line-height: 1.5em;
+}
+.row{
+	margin-left: 0px;
 }
 .one-project{
     background: pink;
@@ -181,19 +189,31 @@ main h2 {
 
 .project-descrip{
 	display: inline-block;
-	font-size: 20px;
-	padding-top: 5%;
-	padding-left: 5%;
+	font-size: 24px;
+	padding: 0px;
 }
-#showLight{
+.project-descrip a{
+		text-decoration: underline;
+}
+.project-descrip>div{
+	/*debuging so opacity is 1*/
 	opacity: 0;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	line-height: 1.2em;
+	padding-top: 20%;
+	padding-left: 10%;
+	padding-right: 10%;
 }
-#showTwitter{
-	opacity: 0;
+
+rect {
+  fill: rgba(245,245,245,0.9);
 }
-#showComp{
-		opacity: 0;
+rect:hover{
+	fill: pink;
 }
+
 #datacomp{
 	background: url("../img/titanic.jpg") center;
 	background-size: cover;
@@ -210,6 +230,42 @@ main h2 {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.text-descrip{
+	position: relative;
+	height: 40%;
+}
+
 footer{
 	text-align: center;
+	background: black;
+}
+
+
+.col-md-4 p{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	color: white;
+}
+.footer-text-container{
+	color: #FFF;
+	font-size: 12px;
+	letter-spacing: 3px;
+	width: 85%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.footer-text-container h6{
+	margin-top: 30px;
+	font-size: 11px;
+	line-height: 15px;
+	letter-spacing: 1px;
+	color: rgb(208,208,208);
+}
+
+.label {
+  font-size: 18px;
+	fill:white;
 }
