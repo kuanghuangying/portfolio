@@ -23,6 +23,14 @@ $("#datacomp").hover(
     $("#showComp").animate({opacity:0});
   }
 );
+$("#statcomp").hover(
+  function(){
+    $("#showStat").animate({opacity:1});
+  },
+  function(){
+    $("#showStat").animate({opacity:0});
+  }
+);
 
 $(".title").animate({opacity: 1},3000);
 
@@ -35,9 +43,11 @@ var data = [
     {"skill":"Git","quantity":65}],
   [{"skill":"Python","quantity":100},
     {"skill":"NumPy","quantity":40},
-    {"skill":"Matplotlib","quantity":60}]
+    {"skill":"Matplotlib","quantity":60}],
+  [{"skill":"Tablaue","quantity":100},
+    {"skill":"Python","quantity":70}]
   ]
-var barGraphList = ["#showTwitter","#showLight", "#showComp"];
+var barGraphList = ["#showTwitter","#showLight", "#showComp","#showStat"];
 
 for (i = 0; i<barGraphList.length;i++){
   var svg = d3.select(barGraphList[i]).select(".barGraph").append("svg")

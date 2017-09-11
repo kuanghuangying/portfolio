@@ -230,6 +230,11 @@ rect:hover{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+#statcomp{
+	background: url("../img/park1.jpg") center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 .text-descrip{
 	position: relative;
